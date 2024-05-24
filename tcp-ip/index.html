@@ -20,18 +20,22 @@
 			Physical
 		</h2>
 		<p>
-			Il livello fisico (physical) si occupa della comunicazione all'interno della singola rete informatica: esso risolve la traduzione dei bit come segnali fisici e permette lo scambio di frame (piccole sequenze di bit) tra i dispositivi. Questo livello è spesso implementato con il protocollo ethernet, che descrive quanto serve: dal modello del connettore RJ45 alla struttura dei frame e degli indirizzi MAC (Media Access Control), detti anche indirizzi fisici, ovvero indirizzi scritti all'interno delle schede di rete e che permettono di indirizzare il frame all'interno della rete locale.
+			Il livello fisico (physical) si occupa della comunicazione all'interno della singola rete informatica: esso risolve la traduzione dei bit come segnali fisici e permette lo scambio di frame (piccole sequenze di bit) tra i dispositivi.<br>
+			Questo livello è spesso implementato con il protocollo ethernet, che descrive quanto serve: dal modello del connettore RJ45 alla struttura dei frame e degli indirizzi MAC (Media Access Control), detti anche indirizzi fisici, ovvero indirizzi scritti all'interno delle schede di rete e che permettono di indirizzare il frame all'interno della rete locale.
 		</p>
 		<h2>
 			Network
 		<p>
-			Il livello di rete (network) si occupa della transizione di pacchetti attraverso le reti (inter-net), per far comunicare due computer (in gergo detti anche host) collegati a reti differenti. Esso è basato sul protocollo IP, che descrive come assegnare gli indirizzi omonimi, detti anche indirizzi logici, e come utilizzarli per permettere ai pacchetti di raggiungere la destinazione. Per attraversare una rete locale, ogni pacchetto viene trasportato all'interno di un frame e, giunto ad un router, estratto dal frame e disposto all'interno di un nuovo frame per attraversare la rete successiva, fino a giungere a destinazione.
+			Il livello di rete (network) si occupa della transizione di pacchetti attraverso le reti (inter-net), per far comunicare due computer (in gergo detti anche host) collegati a reti differenti.<br>
+			Esso è basato sul protocollo IP, che descrive come assegnare gli indirizzi omonimi, detti anche indirizzi logici, e come utilizzarli per permettere ai pacchetti di raggiungere la destinazione. Per attraversare una rete locale, ogni pacchetto viene trasportato all'interno di un frame e, giunto ad un router, estratto dal frame e disposto all'interno di un nuovo frame per attraversare la rete successiva, fino a giungere a destinazione.
 		</p>
 		<h2>
 			Transport
 		</h2>
 		<p>
-			Il livello di trasporto (transport) realizza la trasmissione di file o informazioni tra due host, anche su reti differenti. Il protocollo più importante di questo livello è il protocollo TCP, che fa sì che la comunicazione tra host avvenga in modo completo e corretto. Esso prevede la suddivisione del file da inviare in diversi segmenti, che viaggiano su pacchetti differenti, per poi essere ricostituiti presso l'host di destinazione. Per permettere ai segmenti di essere ricostituiti presso il processo corretto eseguito sull'host finale vengono utilizzati dei numeri, detti porte; questo permette di non creare conflitti tra le diverse comunicazioni che mantiene una macchina attraverso le reti a cui è collegata. Dietro ad ogni porta  è infatti presente una socket software che l'applicazione utilizza per trasferire dati ad altre applicazioni su altri dispositivi.
+			Il livello di trasporto (transport) realizza la trasmissione di file o informazioni tra due host, anche su reti differenti.<br>
+			Il protocollo più importante di questo livello è il protocollo TCP, che fa sì che la comunicazione tra host avvenga in modo completo e corretto. Esso prevede la suddivisione del file da inviare in diversi segmenti, che viaggiano su pacchetti differenti, per poi essere ricostituiti presso l'host di destinazione.<br>
+			Per permettere ai segmenti di essere ricostituiti presso il processo corretto eseguito sull'host finale vengono utilizzati dei numeri, detti porte; questo permette di non creare conflitti tra le diverse comunicazioni che mantiene una macchina attraverso le reti a cui è collegata. Dietro ad ogni porta  è infatti presente una socket software che l'applicazione utilizza per trasferire dati ad altre applicazioni su altri dispositivi.
 		</p>
 		<h2>
 			Application

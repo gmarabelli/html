@@ -4,18 +4,29 @@
 		<title>TCP/IP</title>
 	</head>
 	<body>
-		<h1>
-			Il modello TCP/IP
-		</h1>
-		<p>
-			Le reti informatiche seguono, nella progettazione dei vari protocolli, un modello di rete, ovvero un modello che identifica i ruoli differenti delle varie componenti hardware e software. Separare i ruoli delle varie componenti permette di realizzare un'architettura modulare, ovvero è possibile cambiare i protocolli o i sistemi utilizzati ad un livello senza dover modificare quelli degli altri livelli superiori o inferiori.
-		</p>
-		<p>
-			Il modello più diffuso, utilizzato oggi sulla rete internet, è il modello TCP/IP. Esso prende il nome dai due protocolli fondamentali che ne permettono il funzionamento: IP (Internet Protocol) e TCP (Transmission Control Protocol).
-		</p>
-		<p>
-			Il modello TCP/IP suddivide la rete in quattro livelli, che si occupano di aspetti complementari tra loro. Si tratta dei livelli fisico, di rete, trasporto e applicativo. Esso non è solo un modello di rete, ma uno stack di protocolli, ovvero prevede alcuni protocolli per i vari livelli. Per ogni livello è previsto anche un PDU (Protocol Data Unit), ovvero l'unità di dati che il protocollo di quel livello deve gestire.
-		</p>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<h1>
+							Il modello TCP/IP
+						</h1>
+						<p>
+							Le reti informatiche seguono, nella progettazione dei vari protocolli, un modello di rete, ovvero un modello che identifica i ruoli differenti delle varie componenti hardware e software. Separare i ruoli delle varie componenti permette di realizzare un'architettura modulare, ovvero è possibile cambiare i protocolli o i sistemi utilizzati ad un livello senza dover modificare quelli degli altri livelli superiori o inferiori.
+						</p>
+						<p>
+							Il modello più diffuso, utilizzato oggi sulla rete internet, è il modello TCP/IP. Esso prende il nome dai due protocolli fondamentali che ne permettono il funzionamento: IP (Internet Protocol) e TCP (Transmission Control Protocol).
+						</p>
+						<p>
+							Il modello TCP/IP suddivide la rete in quattro livelli, che si occupano di aspetti complementari tra loro. Si tratta dei livelli fisico, di rete, trasporto e applicativo. Esso non è solo un modello di rete, ma uno stack di protocolli, ovvero prevede alcuni protocolli per i vari livelli. Per ogni livello è previsto anche un PDU (Protocol Data Unit), ovvero l'unità di dati che il protocollo di quel livello deve gestire.
+						</p>
+					</td>
+					<td>
+						<img src="tcp-stack.png">
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		<h2>
 			Physical
 		</h2>
@@ -140,9 +151,20 @@
 				</tr>
 			</tbody>
 		</table>
-		<p>
-			Riprendendo il percorso dal punto di vista dei dati, il file viene quindi separato in segmenti, ciascuno dei quali caricato in un pacchetto per raggiungere la destinazione e ciascun pacchetto sarà ospite di un frame su ciascuna tratta di rete necessaria a raggiungere la destinazione.<br>
-			Questi passaggi sono ben visibili nell'animazione a lato.
-		</p>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<p>
+							Riprendendo il percorso dal punto di vista dei dati, il file viene quindi separato in segmenti, ciascuno dei quali caricato in un pacchetto per raggiungere la destinazione e ciascun pacchetto sarà ospite di un frame su ciascuna tratta di rete necessaria a raggiungere la destinazione.<br>
+							Questi passaggi sono ben visibili nell'animazione a lato.
+						</p>
+					</td>
+					<td>
+						<video src="pdu-moves.mp4" autoplay muted loop>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</body>
 </html>
